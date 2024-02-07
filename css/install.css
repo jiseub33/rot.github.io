@@ -10,12 +10,15 @@ body {
 }
 
 body > div.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 90%;
     height: 300px;
     margin: 0 auto;
 
     text-align: center;
-    padding: 20px 0;
+    transform: translate(-50%,-50%);
 }
 
 .title .maintitle {
@@ -60,4 +63,8 @@ body > div.title {
     font-weight: 700;
     line-height: 40px;
     text-decoration: none;
+}
+
+.add-button  svg {
+    width: 100%;
 }
