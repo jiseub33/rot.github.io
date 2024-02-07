@@ -169,7 +169,7 @@ body > details summary svg {
     width: 30px;
 }
 
-body > details.call[open] summary svg {
+body > details[open] summary svg {
     transform: translate(50%,-50%) rotate(180deg);
 }
 
@@ -195,7 +195,7 @@ body > details div p {
 
 body > details div a {
     display: block;
-    padding: 15px 0 0 15px;
+    padding: 10px;
     color: #000;
     font-size: 12.5px;
     font-weight: 700;
