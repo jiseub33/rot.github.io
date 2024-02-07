@@ -106,3 +106,62 @@ body > div.title {
     font-size: 12.5px;
     font-weight: 700;
 }
+
+details.call {
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+details.call[open] {
+    color: #ff0000;
+}
+
+details.call summary {
+    position: relative;
+    font-size: 15px;
+    font-weight: 800;
+    list-style: none;
+}
+
+details.call summary h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+details.call summary svg {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(50%,-50%) rotate(0deg);
+    width: 30px;
+}
+
+details.call[open] summary svg {
+    transform: translate(50%,-50%) rotate(180deg);
+}
+
+details.call div h1 {
+    display: block;
+    color: #000;
+    font-size: 20px;
+}
+
+details.call div a {
+    display: block;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
