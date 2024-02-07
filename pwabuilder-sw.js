@@ -1,10 +1,4 @@
-const CACHE = "offline-page";
-const OFFLINE_URL = "offline.html";
-const CACHE_URLS = [
-  OFFLINE_URL,
-  "hjs.html",
-  "css/main.css"
-];
+
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {

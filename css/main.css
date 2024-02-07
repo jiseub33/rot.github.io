@@ -47,26 +47,26 @@ body > div.title {
     padding: 0;
     margin: 0 auto;
     width: 90%;
+    border-radius: 20px;
+    background: #fff;
 }
 
 .missions > h1 {
+    padding: 15px;
+    margin: 0;
     font-size: 25px;
     font-weight: 800;
 }
 
 .missions details {
-    width: 100%;
+    display: none;
+    position: relative;
     padding: 15px;
-    margin: 20px auto;
     box-sizing: border-box;
-    border-radius: 20px;
-    background: #fff;
 }
 
 .missions details summary {
     position: relative;
-    font-size: 15px;
-    font-weight: 800;
     list-style: none;
 }
 
@@ -74,7 +74,7 @@ body > div.title {
     padding: 15px 0;
     margin: 0;
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 700;
     list-style: none;
 }
 
@@ -97,17 +97,37 @@ body > div.title {
     transform: translate(50%,-50%) rotate(180deg);
 }
 
-.missions details > p {
-    font-size: 12.5px;
+.missions details div {
+    height: 0;
+    transition: all .5s;
+}
+
+.missions details[open] div {
+    height: auto;
+}
+
+.missions details div p {
+    font-size: 0px;
     font-weight: 500;
+    line-height: 1.5;
+    transition: all .5s;
 }
 
-.missions details > b {
+.missions details[open] div p {
     font-size: 12.5px;
-    font-weight: 700;
 }
 
-details.call {
+.missions details div b {
+    font-size: 0px;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.missions details[open] div b {
+    font-size: 12.5px;
+}
+
+body > details {
     display: block;
     padding: 15px;
     margin: 20px auto;
@@ -120,28 +140,28 @@ details.call {
     text-align: left;
     font-size: 20px;
     font-weight: 700;
-    line-height: 40px;
     text-decoration: none;
 }
 
-details.call[open] {
+body > details.call[open] {
     color: #ff0000;
 }
 
-details.call summary {
+body > details summary {
     position: relative;
     font-size: 15px;
     font-weight: 800;
     list-style: none;
 }
 
-details.call summary h1 {
+body > details summary h1 {
     margin: 0;
     font-size: 25px;
     font-weight: 900;
+    line-height: 40px;
 }
 
-details.call summary svg {
+body > details summary svg {
     position: absolute;
     top: 50%;
     right: 25px;
@@ -149,19 +169,34 @@ details.call summary svg {
     width: 30px;
 }
 
-details.call[open] summary svg {
+body > details.call[open] summary svg {
     transform: translate(50%,-50%) rotate(180deg);
 }
 
-details.call div h1 {
+body > details div {
+    padding: 15px 0 0 0;
+}
+
+body > details div h1 {
     display: block;
+    padding: 15px 0 0 0;
+    margin: 0;
     color: #000;
     font-size: 20px;
 }
 
-details.call div a {
+body > details div p {
     display: block;
     color: #000;
-    font-size: 20px;
+    font-size: 12.5px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+body > details div a {
+    display: block;
+    padding: 15px 0 0 15px;
+    color: #000;
+    font-size: 12.5px;
     font-weight: 700;
 }

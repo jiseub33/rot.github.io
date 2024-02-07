@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/theme.css">
     <script src="js/time.js" defer></script>
+    <script src="js/missions.js" defer></script>
     <script type="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
         const el = document.createElement('pwa-update');
@@ -24,9 +25,26 @@
         </div>
         <p class="subtitle" id="subtitle"></p>
     </div>
-    <ul class="missions">
-        <h1>미션이 왔어요!</h1>
-        <details>
+    <div class="missions">
+        <h1>MISSION</h1>
+        <details date="2024-02-07">
+            <summary>
+                <h2>⭐⭐⭐</h2>
+                <h1>사진찍기</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                    </path>
+                </svg>
+            </summary>
+            <div>
+                <p>
+                    가족중 아무나와 셀카찍기
+                </p>
+                <b>미션시작일 : 02/10</b>
+            </div>
+        </details>
+        <details date="2024-02-07">
             <summary>
                 <h2>⭐⭐⭐</h2>
                 <h1>주문하기</h1>
@@ -44,7 +62,42 @@
                 <b>미션시작일 : 02/10</b>
             </div>
         </details>
-    </ul>
+        <details date="2024-02-07">
+            <summary>
+                <h2>⭐⭐⭐</h2>
+                <h1>길찾기</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                    </path>
+                </svg>
+            </summary>
+            <div>
+                <p>
+                    오늘은 자유일정이 있는 날이에요!<br>
+                    가족들과 가기로 한곳에 길안내를 해보세요!
+                </p>
+                <b>미션시작일 : 02/10</b>
+            </div>
+        </details>
+    </div>
+    <details>
+        <summary>
+            <h1>미션규칙</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                </path>
+            </svg>
+        </summary>
+        <div>
+            <p>
+                멤버마다 모두 미션이 다 달라요!<br>
+                서로 미션을 공유 가능하며 멤버 전원의 합의하에 미션교환도 가능해요!<br>
+                미션은 혼자서 클리어 해도 되지만 같이 클리어 해도 된돱니다 :D<br>
+            </p>
+        </div>
+    </details>
     <details class="call">
         <summary>
             <h1>긴급전화</h1>
@@ -59,7 +112,6 @@
             <a class="call" href="tel:+60 3-4266-8900">서말레이시아 1</a>
             <a class="call" href="tel:+60-3-4251-2336">서말레이시아 2</a>
             <a class="call" href="tel:+60-88-206-110">사바 및 사라왁</a>
-            <br>
             <h1>근무 시간외 사건사고 발생시</h1>
             <a class="call" href="tel:+60 17-623-8343">서말레이시아 1</a>
             <a class="call" href="tel:+800-2100-0404">사바 및 사라왁</a>
