@@ -7,9 +7,9 @@
     <title>설치하기</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="https://rot.jisby.com/images/logo/logo_256x256.png">
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/theme.css">
+    <script src="js/time.js" defer></script>
     <script type="module">
         import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
         const el = document.createElement('pwa-update');
@@ -20,11 +20,9 @@
 <body>
     <div class="title">
         <div class="maintitle">
-            <h1>뜨라마까시!</h1>
+            <h1 id="greeting"></h1>
         </div>
-        <p class="subtitle">
-            즐거운 오후에요!
-        </p>
+        <p class="subtitle" id="subtitle"></p>
     </div>
     <ul class="missions">
         <h1>미션이 왔어요!</h1>
@@ -32,7 +30,11 @@
             <summary>
                 <h2>⭐⭐⭐</h2>
                 <h1>주문하기</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                    </path>
+                </svg>
             </summary>
             <div>
                 <p>
@@ -46,7 +48,11 @@
     <details class="call">
         <summary>
             <h1>긴급전화</h1>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                </path>
+            </svg>
         </summary>
         <div>
             <h1>근무 시간중</h1>
