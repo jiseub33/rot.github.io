@@ -1,0 +1,81 @@
+* {
+    transition: .25s all;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background:  #141414;
+        color: #fff;
+    }
+
+    footer p {
+        color: #fff;
+    }
+
+    /* HOME */
+    .notice {
+        background: url("../images/icons/arrow-right-s-line-white.svg") no-repeat right 15px center, #1f1f1f;
+        color: #fff;
+    }
+
+    .add-button {
+        background: url("../images/icons/arrow-right-s-line-white.svg") no-repeat right 15px center, #1f1f1f;
+        color: #fff;
+    }
+
+    .coupon {
+        background: #1f1f1f;
+    }
+
+    .coupon label {
+        border: 1px solid #323232;
+        color: #fff;
+    }
+
+    .coupon button.sort-button {
+        background: url(../images/icons/sort-asc-white.svg) no-repeat top 27px center, url(../images/icons/sort-desc-white.svg) no-repeat center;
+    }
+    
+    .coupon button.sort-button.oldest {
+        background: url(../images/icons/sort-asc-white.svg) no-repeat center, url(../images/icons/sort-desc-white.svg) no-repeat top -27px center;
+    }
+
+    .coupon div button {
+        background: #1f1f1f;
+        border: 1px solid #323232;
+        color: #fff;
+    }
+
+    .service a {
+        background: #1f1f1f;
+        color: #fff;
+    }
+
+    .service a span:before {
+        background-image: url("../images/icons/customer-service-fill-white.svg");
+    }
+
+    /* NOTICE */
+    .home {
+        background: url("../images/icons/arrow-right-s-line-white.svg") no-repeat right 15px center, #1f1f1f;
+        color: #fff;
+    }
+
+    .list ul li {
+        background: #1f1f1f;
+    }
+
+    .list ul li a .title p {
+        color: #fff;
+    }
+
+    .list ul li a .title h1 {
+        color: #fff;
+    }
+
+    /* NOTICE */
+    .post .maintext p {
+        color: #fff;
+    }
+}
