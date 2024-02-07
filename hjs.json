@@ -1,6 +1,6 @@
 {
   "background_color": "#ffffff",
-  "description": "Gunship Battle Coupon App",
+  "description": "리멤버 아워트립",
   "dir": "ltr",
   "display": "standalone",
   "name": "리멤버 아워트립",
@@ -60,9 +60,9 @@
   ],
   "shortcuts": [
     {
-      "name": "건쉽배틀 쿠폰앱",
+      "name": "리멤버 아워트립",
       "url": "https://rot.jisby.com/",
-      "description": "Gunship Battle Coupon App"
+      "description": "리멤버 아워트립"
     }
   ],
   "prefer_related_applications": false,
