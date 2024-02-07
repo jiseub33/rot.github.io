@@ -8,7 +8,6 @@ window.addEventListener("beforeinstallprompt", (e) => {
     addBtn.style.display = "block"; 
   
     addBtn.addEventListener("click", (e) => {
-      addBtn.style.display = "none";
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === "accepted") {
