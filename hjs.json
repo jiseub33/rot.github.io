@@ -5,12 +5,12 @@
   "display": "standalone",
   "name": "리멤버 아워트립",
   "orientation": "any",
-  "scope": ".",
+  "scope": "https://rot.jisby.com/",
   "short_name": "리멤버 아워트립",
   "start_url": "https://rot.jisby.com/hjs",
   "theme_color": "#f8f8f8",
   "categories": [
-    "trip"
+    "travel"
   ],
   "icons": [
     {
