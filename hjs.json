@@ -50,14 +50,6 @@
       "purpose": "any"
     }
   ],
-  "screenshots" : [
-    {
-      "src": "https://rot.jisby.https://rot.jisby.com/images/screenshots/1.jpg",
-      "sizes": "1080x2273",
-      "type": "image/jpg",
-      "platform": "wide"
-    }
-  ],
   "shortcuts": [
     {
       "name": "리멤버 아워트립",
