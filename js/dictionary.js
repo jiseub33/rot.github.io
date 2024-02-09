@@ -172,8 +172,8 @@ function handleItemClick(event) {
         setTimeout(function () {
             clickedLi.classList.remove('correct', 'wrong');
             setRandomWords(); //Set new random words
-        }, 5000);
-        disableClicksForTime(5000);
+        }, 4000);
+        disableClicksForTime(4000);
     }
 }
 // Attach event listeners to each li element
