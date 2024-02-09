@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: rgb(248, 248, 248);
+    line-height: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.menu button {
+    display: block;
+    padding: 15px;
+    width: 47%;
+    background: #fff;
+    box-sizing: border-box;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.menu button.active {
+    display: block;
+    background: #3d9dd9;
+    color: #fff;
+}
+
+.dictionary {
+    padding: 0;
+    width: 100%;
+}
+
+.dictionary > h1 {
+    padding: 0 0 15px 0;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.dictionary li {
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: #fff;
+    list-style: none;
+}
+
+.dictionary li h1 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.dictionary li p {
+    margin: 20px 0 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dictionary li b {
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* 게임 */
+
+.game {
+    display: none;
+}
+
+.game > div.title {
+    padding: 0;
+    margin: 50px auto;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.game .title .question {
+    position: relative;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.game .title .question h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 800;
+    transform: translateY(-2px);
+}
+
+.game .title p {
+    margin: 0;
+    padding: 15px 0 0 0;
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.game ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px auto;
+    width: 90%;
+    height: calc(100vh - 359px);
+    text-align: center;
+}
+
+.game ul li {
+    position: relative;
+    flex: 1 1 40%;
+    border-radius: 20px;
+    background: #fff;
+    list-style: none;
+}
+
+.game ul li:nth-child(1) {
+    margin: 0 10px 10px 0;
+}
+
+.game ul li:nth-child(2) {
+    margin: 0 0 10px 10px;
+}
+
+.game ul li:nth-child(3) {
+    margin: 10px 10px 0 0;
+}
+
+.game ul li:nth-child(4) {
+    margin: 10px 0 0 10px;
+}
+
+.game ul li.correct {
+    background: #008000;
+    color: #fff;
+}
+
+.game ul li.wrong {
+    background: #ff0000;
+    color: #fff;
+}
+
+.game ul li div {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.game ul li div h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.game ul li div p {
+    padding: 5px 0 0 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+body > button {
+    display: block;
+    position: relative;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    color: #000;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+body > button svg {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(50%,-50%) rotate(-90deg);
+    width: 30px;
+}

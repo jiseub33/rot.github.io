@@ -1,17 +1,23 @@
-// Get current date
-var currentDate = new Date().toISOString().slice(0,10);
+var currentDate = new Date().toISOString().slice(0, 10);
+var missionsContainers = document.querySelectorAll('.missions');
 
-// Get all list items
-var items = document.querySelectorAll('.missions details');
+missionsContainers.forEach(function (container) {
+    var items = container.querySelectorAll('details');
+    var anyItemDisplayed = false;
 
-// Loop through each item
-items.forEach(function(item) {
-    var itemDate = item.getAttribute('date');
+    items.forEach(function (item) {
+        var itemDate = item.getAttribute('date');
 
-    // Check if item's date is less than or equal to the current date
-    if (itemDate <= currentDate) {
-        item.style.display = 'block'; // Display the item
-    } else {
-        item.classList.add('hidden'); // Hide the item
+        if (itemDate <= currentDate) {
+            item.style.display = 'block'; // Display the item
+            anyItemDisplayed = true;
+        } else {
+            item.classList.add('hidden'); // Hide the item
+        }
+    });
+
+    if (!anyItemDisplayed) {
+        var missionsHeader = container.querySelector('h2');
+        missionsHeader.style.display = 'block';
     }
 });

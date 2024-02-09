@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="https://rot.jisby.com/hjs.json" />
+    <title>리멤버 아워트립</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="https://rot.jisby.com/images/logo/logo_256x256.png">
+    <link rel="stylesheet" href="css/dictionary.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <script src="js/dictionary.js" defer></script>
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+        const el = document.createElement('pwa-update');
+        document.body.appendChild(el);
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+        <button id="dictionary" class="active">사전</button>
+        <button id="game">게임</button>
+    </div>
+    <ul class="dictionary"></ul>
+    <div class="game">
+        <div class="title">
+            <div class="question">
+                <h1 id="question">안녕하세요</h1>
+            </div>
+            <p class="score" id="score">0</p>
+            <p>최고점수 : <span id="best_score">0</span></p>
+        </div>
+        <ul id="wordList">
+            <li>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </li>
+    </div>
+    </ul>
+    <button onclick="goBack()">
+        돌아가기
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+            </path>
+        </svg>
+    </button>
+    <script>
+        document.getElementById('dictionary').addEventListener('click', function () {
+            this.classList.add('active');
+            document.getElementById('game').classList.remove('active');
+            document.querySelector('.dictionary').style.display = 'block';
+            document.querySelector('.game').style.display = 'none';
+        });
+
+        document.getElementById('game').addEventListener('click', function () {
+            this.classList.add('active');
+            document.getElementById('dictionary').classList.remove('active');
+            document.querySelector('.game').style.display = 'block';
+            document.querySelector('.dictionary').style.display = 'none';
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

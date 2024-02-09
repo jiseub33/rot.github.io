@@ -1,4 +1,15 @@
+const CACHE_URLS = [
+  '/',
+  '/dictionary.html',
+  '/css/main.css',
+  '/css/dictionary.css',
+  '/js/time.js',
+  '/js/missions.js',
+  '/js/dictionary.js',
+  '/offline.html'
+];
 
+const CURRENT_PAGE_URL = location.pathname; // 현재 페이지의 URL을 가져옵니다.
 
 self.addEventListener("message", (event) => {
   if (event.data && event.data.type === "SKIP_WAITING") {
@@ -45,3 +56,14 @@ self.addEventListener('fetch', (event) => {
     })());
   }
 });
+
+// 현재 페이지의 URL을 CACHE_URLS에 추가합니다.
+CACHE_URLS.push(CURRENT_PAGE_URL);
+
+// 현재 페이지를 캐시에 추가하는 route를 등록합니다.
+workbox.routing.registerRoute(
+  CURRENT_PAGE_URL,
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: CACHE
+  })
+);
