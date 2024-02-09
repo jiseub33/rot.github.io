@@ -104,12 +104,26 @@ function handleItemClick(event) {
     var currentScore = parseInt(scoreElement.textContent);
 
     if (isCorrect) {
-        scoreElement.textContent = currentScore + 10; // Add 100 points for correct answer
+        // Update the score
+        var newScore = currentScore + 10;
+        scoreElement.textContent = newScore;
+    
+        // Check if it's a new best score
+        var bestScoreElement = document.getElementById('best_score');
+        var bestScore = parseInt(bestScoreElement.textContent);
+    
+        if (newScore > bestScore) {
+            bestScoreElement.textContent = newScore;
+            // Save the best score as a cookie
+            document.cookie = "best_score=" + newScore + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+        }
+    
         clickedLi.classList.add('correct');
+    
         // Reset classes after 3 seconds and set new random words
         setTimeout(function () {
             clickedLi.classList.remove('correct', 'wrong');
-            setRandomWords(); //Set new random words
+            setRandomWords(); // Set new random words
         }, 2500);
         disableClicksForTime(2500);
     } else {

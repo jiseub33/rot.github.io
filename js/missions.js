@@ -1,4 +1,8 @@
-var currentDate = new Date().toISOString().slice(0, 10);
+var currentDate = new Date();
+var year = currentDate.getFullYear();
+var month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Adding 1 because month indexes start from 0
+var day = String(currentDate.getDate()).padStart(2, '0');
+var formattedDate = `${year}-${month}-${day}`;
 var missionsContainers = document.querySelectorAll('.missions');
 
 missionsContainers.forEach(function (container) {
@@ -8,7 +12,7 @@ missionsContainers.forEach(function (container) {
     items.forEach(function (item) {
         var itemDate = item.getAttribute('date');
 
-        if (itemDate <= currentDate) {
+        if (itemDate <= formattedDate) {
             item.style.display = 'block'; // Display the item
             anyItemDisplayed = true;
         } else {
