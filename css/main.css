@@ -109,7 +109,7 @@ body > a svg {
     list-style: none;
 }
 
-.missions details summary h1{
+.missions details summary h1 {
     padding: 15px 0;
     margin: 0;
     font-size: 25px;
@@ -117,7 +117,7 @@ body > a svg {
     list-style: none;
 }
 
-.missions details summary h2{
+.missions details summary h2 {
     margin: 0;
     font-size: 10px;
     font-weight: 800;
@@ -138,6 +138,16 @@ body > a svg {
     right: 25px;
     transform: translate(50%,-50%) rotate(0deg);
     width: 30px;
+}
+
+.missions details.success summary svg {
+    border: 2px solid #21eb6b;
+    border-radius: 20px;
+    color: #21eb6b;
+}
+
+.missions details.fail summary svg {
+    color: #ff0000;
 }
 
 .missions details[open] summary svg {
